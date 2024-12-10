@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "healthX_backend": {
+      "candid": "src/healthX_backend/healthX_backend.did",
+      "package": "healthX_backend",
+      "type": "rust"
+    },
+    "healthX_frontend": {
+      "dependencies": [
+        "healthX_backend"
+      ],
+      "source": [
+        "src/healthX_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "healthX_frontend" 
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
